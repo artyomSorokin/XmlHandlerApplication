@@ -1,0 +1,17 @@
+-- Table: xmlfiles
+
+-- DROP TABLE xmlfiles;
+
+CREATE TABLE xmlfiles
+(
+  id serial NOT NULL,
+  content text,
+  creationdate date,
+  filename character varying,
+  CONSTRAINT xmlfiles_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE xmlfiles
+  OWNER TO postgres;
